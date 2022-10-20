@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    
+
+    <!-- Title -->
+    <title>MASUD</title>
+
+    
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- ICON -->
+    <link rel="icon" href="assets/icon.webp" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <i class="panel__zoom js-zoom fa fa-search-minus fa-4x" id="mapIcon"></i>
+
+    <div class="site-wrap">
+        <div class="panel-wrap animate--none">
+            <!-- LANDING PANEL -->
+            <div class="panel" data-x-pos="0" data-y-pos="0" id="home_panel" onclick="javascript:changeState()">
+                <div class="background-image"></div>
+                <div class="background-image1"></div>
+
+                <!-- <span class="panel__nav panel__nav--up js-up">Up</span> -->
+                <!-- <span class="panel__nav panel__nav--up js-up">Work</span> -->
+                <span class="panel__nav panel__nav--left-top js-up js-left">Skills</span>
+                <span class="panel__nav panel__nav--right-top js-up js-right">Projects</span>
+                <span class="panel__nav panel__nav--left js-left">About Me</span>
+                <span class="panel__nav panel__nav--right js-right">Education</span>
+                <span class="panel__nav panel__nav--left-down js-down js-left">Hobbies</span>
+                <span class="panel__nav panel__nav--right-down js-down js-right">Contact</span>
+                <!-- <span class="panel__nav panel__nav--down js-down">Testimonials</span> -->
+                <!-- <span class="panel__zoom js-zoom">View All</span> -->
+
+                <!-- for desktop -->
+                <h1 id="desktopHeader">
+                    <a><span class="hello-red span-hello animate on-hover-40 js-up js-left delay hide"
+							id="span-hello-desktop"></span></a>
+                    <br>
+                    <a><span class="animate span-iam on-hover-40 js-down js-right delay4"
+							id="span-iam-desktop"></span><br></a>
+                    <a><span class="animate span-masud on-hover-40 js-left delay8" id="span-masud-desktop"></span></a>
+                </h1>
+
+                <!-- for mobile -->
+                <h1 id="mobileHeader">
+                    <div id="mobile-state-one">
+                        <a><span class="hello-red span-hello animate on-hover-40 js-up delay hide"
+								id="span-hello-desktop"></span></a>
+                        <br>
+                        <a><span class="animate span-iam on-hover-40 js-down js-left-twice delay4"
+								id="span-iam-desktop"></span><br></a>
+                        <a><span class="animate span-masud on-hover-40 js-left delay8"
+								id="span-masud-desktop"></span></a>
+                    </div>
+
+                    <div id="mobile-state-two" style="display: none;">
+                        <a><span class="hello-red animate on-hover-40 js-up delay hide"
+								id="span-hello-mobile">Work</span></a>
+                        <br>
+                        <a><span class="animate on-hover-40 js-down js-right delay4"
+								id="span-iam-mobile">Contact</span><br></a>
+                        <a><span class="animate on-hover-40 js-left delay8" id="span-masud-mobile">About</span></a>
+                    </div>
+                </h1>
+                <div class="tap-div">Tap to know more</div>
+                <div class="hover-div">Hover above to know more</div>
+            </div>
+            <!-- ABOUT PANEL -->
+            <div class="panel" data-x-pos="-1" data-y-pos="0" id="about_panel">
+                <span class="panel__nav panel__nav--up js-up">Skills</span>
+                <!-- <span class="panel__nav panel__nav--right-top js-right js-up">Work</span> -->
+                <span class="panel__nav panel__nav--right js-right">Home</span>
+                <span class="panel__nav panel__nav--down js-down">Hobbies</span>
+                <!-- <span class="panel__nav panel__nav--right-down js-right js-down">Testimonials</span> -->
+                <div class="paraHolder">
+                    <h2>About Me</h2>
+                    <br>
+                    <strong><span class="strong-text">Hi, I am Masud Ali. Pleased to meet you.</span></strong>
+                    <br> I am a software engineer. I am currently pursuing
+                    the <span class="strong-text">5th semester</span> of Bachelor
+                    of Technology in <span class="strong-text">Computer Science and Engineering </span>from
+                    Siliguri Institute of &amp; Technology, Siliguri. I put my best
+                    into every line of code I write,  I am naturally curious, confidently
+                    perseverant and constantly working to improve my skill-set one
+                    software at a time.
+                    <br>
+                    <br>
+                    <div class="about-intro-para">
+                        <div class="about-intro-text">
+                            I do not define myself by the work I have done, but rather that which I want to do.
+                            Challenges drive me, and innovations inspire me. I am
+                            an avid programmer, who likes to code things from scratch
+                            and enjoy bringing ideas to life. I value diversity,
+                            efficient collaboration, and thoughtful interactions.
+                            As a Lifelong learner, I believe constantly improving
+                            my skills and exploring new ideas is indispensable to
+                            my craft. I'm passionate, expressive, and multi-talented
+                            with a natural affinity to collaborate, help, and inspire.
+                            I'm never satisfied to just come up with ideas, instead
+                            I have an almost impulsive urge to bring them to life.
+                            My strong work ethics drive me to go the extra mile to
+                            accomplish goals, whether on the keyboard or beyond.
+                        </div>
+                        <img src="assets/m.2.jpg" alt="Masud" class="about-intro-img">
+                    </div>
+
+                   
+                </div>
+            </div>
+            <!-- EDUCATION PANEL -->
+            <div class="panel" data-x-pos="1" data-y-pos="0" id="education_panel">
+                <!-- <span class="panel__nav panel__nav--left-top js-left js-up">Work</span> -->
+                <span class="panel__nav panel__nav--up js-up">Projects</span>
+                <span class="panel__nav panel__nav--left js-left">Home</span>
+                <span class="panel__nav panel__nav--down js-down">Contact</span>
+                <!-- <span class="panel__nav panel__nav--left-down js-left js-down">Testimonials</span> -->
+                <div class="paraHolder">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li>
+                            <strong><span class="strong-text">Bachelor of Technology in Computer Science
+									Engineering</span></strong>
+                            <br>
+                            <span>Siliguri Institute of Technology</span>
+                            <br>
+                            <span>CGPA: 9.38/10</span>
+                            <br>
+                            <span>2022 - Present</span>
+                            <br>
+                            <span class="strong-text">Courses</span>
+                            <ul class="two-column-list">
+                                <li>Data Structures &amp; Algorithms</li>
+                                <li>Operating Systems</li>
+                                
+                                <li>Aritifical Intelligence</li>
+                             
+                                <li>Design and Analysis of Algorithms</li>
+                               
+                                <li>Software Engineering</li>
+                                <li>Object Oriented Programming</li>
+                         
+                            </ul>
+                        </li>
+                        <li>
+                            <strong><span class="strong-text">Intermediate(12th)</span></strong>
+                            <br>
+                            <span>Dinhata High School</span>
+                            <br>
+                            <span>2020</span>
+                        </li>
+                        <li>
+                            <strong><span class="strong-text">Matriculation(10th)</span></strong>
+                            <br>
+                            <span>Gopal Nagar M.S.S High School</span>
+                            <br>
+                            <span>2018</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CONTACT PANEL -->
+            <div class="panel" data-x-pos="1" data-y-pos="-1" id="contact_panel">
+                <span class="panel__nav panel__nav--up js-up">Education</span>
+                <span class="panel__nav panel__nav--left-top js-up js-left">Home</span>
+               
+                <div class="paraHolder">
+                    <h2>Contact</h2>
+                    <br> Hey! if you have any questions :) Feel free to reach
+                    me on these handles
+                    <ul>
+                        <li><a href="mailto:alimasud1052002@gmail.com"><span><i class="fa fa-envelope"
+										aria-hidden="true"></i></span>: <span class="hello-red"
+									style="text-decoration: underline;"> alimasud1052002@gmail.com</span></a></li>
+                        <li><a href="https://github.com/Ranamasud1414"><span><i class="fa fa-github-square"
+										aria-hidden="true"></i></span>: <span class="hello-red"
+									style="text-decoration: underline;"> GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/masud-ali-1aab97247/"><span><i
+										class="fa fa-linkedin-square" aria-hidden="true"></i></span>: <span
+									class="hello-red" style="text-decoration: underline;">
+									LinkedIn</span></a></li>
+                       
+                        <li><a href="https://leetcode.com/ranamasud1052002/"><span><img class="contact-icon" src="assets/leetcode.png"/></span>: <span
+									class="hello-red" style="text-decoration: underline;"> Leetcode</span></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="example00@gmail.com" required>
+                        <textarea name="Masseage"  rows="6" placeholder="Any suggestion?" required></textarea>
+                        <button type="submit" class="glow-on-hover">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------- -->
+                
+                <!-- ------------------------------------------------------------------ -->
+            </div>
+            <!-- HOBBIES PANEL -->
+            <div class="panel" data-x-pos="-1" data-y-pos="-1" id="hobbies_panel">
+                <span class="panel__nav panel__nav--up js-up">About Me</span>
+                <span class="panel__nav panel__nav--right-top js-up js-right">Home</span>
+
+                <div class="paraHolder">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>
+                            <span class="hello-red">Equestrian:</span> My skill with
+                            horses is matched only by my love for them. I have spent
+                            hours in the saddle, forming an unbreakable bond of companionship
+                            with my four-legged friends. During this, I have learnt
+                            a great deal about team-work, trust, and the importance
+                            of a never-say-die attitude.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="hello-red">History Buff:</span> The past
+                            is a great teacher. I spend a fair share of my day learning
+                            about ancient civilizations, cultures, and people. I
+                            am especially fascinated by the Roman Empire and its
+                            conquest of the Mediterranean, and the impact it left
+                            on the society which still echoes to this day.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="hello-red">Creative Writing:</span> I firmly
+                            believe in 'saying more, speaking less'. Creative writing
+                            helps me to be more expressive, clear, and precise about
+                            what I want to share. I regularly pen down my thoughts
+                            and experiences, which allow me to reflect on my previous
+                            actions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+            <!-- SKILLS PANEL -->
+            <div class="panel" data-x-pos="-1" data-y-pos="1" id="skills_panel">
+                <span class="panel__nav panel__nav--down js-down">About me</span>
+                <span class="panel__nav panel__nav--right-down js-right js-down">Home</span>
+                <!-- <span class="panel__nav panel__nav--right js-right">Work</span> -->
+                <div class="paraHolder">
+                    <h2>Skills</h2>
+                    <strong><span class="strong-text">Languages</span></strong>
+                    <div class="skill-container">
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+                                class="skill-icon" alt="c" />
+                            <figcaption>C</figcaption>
+                        </div>
+                        
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                                class="skill-icon" alt="Java" />
+                            <figcaption>Java</figcaption>
+                        </div>
+                      
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                class="skill-icon" alt="JavaScript" />
+                            <figcaption>JavaScript</figcaption>
+                        </div>
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                                class="skill-icon" alt="css5" />
+                            <figcaption>CSS</figcaption>
+                        </div>
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                                class="skill-icon" alt="html5" />
+                            <figcaption>HTML</figcaption>
+                        </div>
+                    </div>
+                    <br>
+                    <strong><span class="strong-text">Libraries &amp; Frameworks</span></strong>
+                    <!-- ROW NUMBER 1 -->
+                    <div class="skill-container">
+                       
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                                class="skill-icon" alt="react.js" width="64px" height="64px"
+                            />
+                            <figcaption>React.js</figcaption>
+                        </div>
+                       
+                        
+                       
+                       
+                    </div>
+                    <!-- ROW NUMBER 2 -->
+                    <div class="skill-container">
+                        
+                       
+                       
+                        
+                        
+                        
+                        
+                        
+                    <!-- ROW NUMBER 3 -->
+                    <div class="skill-container">
+                       
+                        <div class="skill-image-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg"
+                                class="skill-icon" alt="jquery" width="64px" height="64px"
+                            />
+                            <figcaption>jQuery</figcaption>
+                        </div>
+                        
+                       
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                                class="skill-icon" alt="bootstrap" width="64px" height="64px"
+                            />
+                            <figcaption>Bootstrap</figcaption>
+                        </div>
+                       
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg"
+                                class="skill-icon" alt="npm" width="64px" height="64px"
+                            />
+                            <figcaption>NPM</figcaption>
+                        </div>
+                        <div class="skill-image-wrapper">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original.svg"
+                                class="skill-icon" alt="yarn" width="64px" height="64px"
+                            />
+                            <figcaption>Yarn</figcaption>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- Projects PANEL -->
+            <div class="panel" data-x-pos="1" data-y-pos="1" id="projects_panel">
+               
+                <span class="panel__nav panel__nav--left-down js-down js-left">Home</span>
+                <span class="panel__nav panel__nav--down js-down">Education</span>
+                <div class="paraHolder">
+                    <h2>Projects</h2>
+                    <br> Here are some of the most challenging projects I have built,
+                    which have helped me hone my skills as a programmer, and open
+                    new avenues for me to explore. In the spirit of open-source,
+                    code for all of these projects are available on my GitHub page:
+                    <a href="https://github.com/Ranamasud1414" target="_blank" rel="noreferrer noopener"><span class="hello-red">Ranamasud1414</span></a>
+                    <ul class="item-list-with-lines">
+                        <li>
+                            <h6 onclick="javascript:toggleDescription('sorting-visualizer-desc')">Snake Game
+                                <span id="sorting-visualizer-desc-toggle-arrow-down">
+									<i class="fa fa-angle-down"></i>
+								</span>
+                                <span id="sorting-visualizer-desc-toggle-arrow-up" style="display: none;">
+									<i class="fa fa-angle-up"></i>
+								</span>
+                            </h6>
+                            <div class="item-desc-text" id="sorting-visualizer-desc">
+                                A simple HTML,CSS,JavaScript use for making this game only in pc not for mobiles.i took help from youtube for this game. 
+                                <br>
+                                <a href=" https://github.com/Ranamasud1414/Snake_game" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a> |
+                                <a href=" https://ranamasud1414.github.io/Snake_game/" target="_blank" rel="noreferrer noopener">
+                                    <span class="hello-red">Website</span>
+                                </a>
+
+                                <a href=" https://ranamasud1414.github.io/Snake_game/" target="_blank" rel="noreferrer noopener">
+                                    <figure><img src="assets/snake.PNG" alt="sorting"
+                                            class="img-media">
+                                        <figcaption>Click to view the site</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <h6 onclick="javascript:toggleDescription('color-detection-desc')">SearchImage <span id="color-detection-desc-toggle-arrow-down">
+									<i class="fa fa-angle-down"></i>
+								</span>
+                                <span id="color-detection-desc-toggle-arrow-up" style="display: none;">
+									<i class="fa fa-angle-up"></i>
+								</span>
+                            </h6>
+                            <div class="item-desc-text" id="color-detection-desc">
+                               I am using HTML,CSS,JS and API for this site that is easy to use very fast no ads i try to make this as easy as possible.peapole can search any think like search in google.
+                                <br>
+                                <a href="https://github.com/Ranamasud1414/SearchImg" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a>|
+                                <a href="https://ranamasud1414.github.io/SearchImg/" target="_blank" rel="noreferrer noopener">
+                                    <span class="hello-red">Website</span>
+                                </a>
+                                <a href="https://ranamasud1414.github.io/SearchImg/" target="_blank" rel="noreferrer noopener">
+                                    <figure><img src="assets/imgsearch.PNG" alt="sorting"
+                                            class="img-media">
+                                        <figcaption>Click to view the site</figcaption>
+                                    </figure>
+                                </a>
+                             
+                            </div>
+                        </li>
+                        <li>
+                            <h6 onclick="javascript:toggleDescription('rome-desc')">AvaterMaking
+                                <span id="rome-desc-toggle-arrow-down">
+									<i class="fa fa-angle-down"></i>
+								</span>
+                                <span id="rome-desc-toggle-arrow-up" style="display: none;">
+									<i class="fa fa-angle-up"></i>
+								</span>
+                            </h6>
+                            <div class="item-desc-text" id="rome-desc">
+                                A simple HTML,CSS,JavaScript use for making this game or you can say a site using API this is for fun like if you give a name on the input box then its fetch the api and search an Images randomly adn best thing is that if you search a word leter then its will show same Avater like the previous one . 
+                                <br>
+                                <a href=" https://github.com/Ranamasud1414/Avatar_Making" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a>|
+                                <a href="https://ranamasud1414.github.io/Avatar_Making/" target="_blank" rel="noreferrer noopener">
+                                    <span class="hello-red">Website</span>
+                                </a>
+
+                                <a href="https://ranamasud1414.github.io/Avatar_Making/" target="_blank" rel="noreferrer noopener">
+                                    <figure><img src="assets/avater.PNG" alt="sorting"
+                                            class="img-media">
+                                        <figcaption>Click to view the site</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                      
+                        <li>
+                            <h6 onclick="javascript:toggleDescription('sound-visualizer-desc')">WordCounter<span id="sound-visualizer-desc-toggle-arrow-down">
+									<i class="fa fa-angle-down"></i>
+								</span>
+                                <span id="sound-visualizer-desc-toggle-arrow-up" style="display: none;">
+									<i class="fa fa-angle-up"></i>
+								</span>
+                            </h6>
+                            <div class="item-desc-text" id="sound-visualizer-desc">
+                                This is useful website this is very simple javascript, if you write anything in the input box it detect the words and Charecterss. 
+                                
+                                <br>
+                                <a href="https://github.com/Ranamasud1414/WordCounter" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a>|
+                                <a href="https://ranamasud1414.github.io/WordCounter/" target="_blank" rel="noreferrer noopener">
+                                    <span class="hello-red">Website</span>
+                                </a>
+                                <img src="assets/word.PNG" alt="sound" class="img-media">
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzUxEEu5Oj8MQdSUw-v_FqQfbjH-wRcLxpByuNzcaH4YSai4aRTP3ACOnxvFgLbOy8/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Thak You!....."
+                
+                setTimeout(function(){
+                    msg.innerHTML=""
+                    
+                },1000)
+                form.reset()
+                
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
