@@ -5,13 +5,18 @@
 
 <head>
    
-    <meta charset="utf-8">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- Description -->
+    <meta name="author" content="Masud Ali" />
+    <meta name="description" content=" software developer." />
+    <meta name="keywords" content="masud,masud ,developer,portfolio,software"
+    />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-
     <!-- Title -->
-    <title>MASUD</title>
+    <title>Masud</title>
 
     
 
@@ -34,8 +39,6 @@
             <!-- LANDING PANEL -->
             <div class="panel" data-x-pos="0" data-y-pos="0" id="home_panel" onclick="javascript:changeState()">
                 <div class="background-image"></div>
-                <div class="background-image1"></div>
-
                 <!-- <span class="panel__nav panel__nav--up js-up">Up</span> -->
                 <!-- <span class="panel__nav panel__nav--up js-up">Work</span> -->
                 <span class="panel__nav panel__nav--left-top js-up js-left">Skills</span>
@@ -60,7 +63,7 @@
                 <!-- for mobile -->
                 <h1 id="mobileHeader">
                     <div id="mobile-state-one">
-                        <a><span class="hello-red span-hello animate on-hover-40 js-up delay hide"
+                        <a><span class="hello-red span-hello animate on-hover-40 js-up js-left delay hide"
 								id="span-hello-desktop"></span></a>
                         <br>
                         <a><span class="animate span-iam on-hover-40 js-down js-left-twice delay4"
@@ -70,8 +73,8 @@
                     </div>
 
                     <div id="mobile-state-two" style="display: none;">
-                        <a><span class="hello-red animate on-hover-40 js-up delay hide"
-								id="span-hello-mobile">Work</span></a>
+                        <a><span class="hello-red animate on-hover-40 js-up js-left delay hide"
+								id="span-hello-mobile">Skills</span></a>
                         <br>
                         <a><span class="animate on-hover-40 js-down js-right delay4"
 								id="span-iam-mobile">Contact</span><br></a>
@@ -123,8 +126,8 @@
                    
                 </div>
             </div>
-            <!-- EDUCATION PANEL -->
-            <div class="panel" data-x-pos="1" data-y-pos="0" id="education_panel">
+             <!-- EDUCATION PANEL -->
+             <div class="panel" data-x-pos="1" data-y-pos="0" id="education_panel">
                 <!-- <span class="panel__nav panel__nav--left-top js-left js-up">Work</span> -->
                 <span class="panel__nav panel__nav--up js-up">Projects</span>
                 <span class="panel__nav panel__nav--left js-left">Home</span>
@@ -178,7 +181,7 @@
             <div class="panel" data-x-pos="1" data-y-pos="-1" id="contact_panel">
                 <span class="panel__nav panel__nav--up js-up">Education</span>
                 <span class="panel__nav panel__nav--left-top js-up js-left">Home</span>
-               
+                <!-- <span class="panel__nav panel__nav--left js-left">Testimonials</span> -->
                 <div class="paraHolder">
                     <h2>Contact</h2>
                     <br> Hey! if you have any questions :) Feel free to reach
@@ -198,26 +201,24 @@
                         <li><a href="https://leetcode.com/ranamasud1052002/"><span><img class="contact-icon" src="assets/leetcode.png"/></span>: <span
 									class="hello-red" style="text-decoration: underline;"> Leetcode</span></a></li>
                     </ul>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" >
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="Email" placeholder="example00@gmail.com" required>
+                            <textarea name="Masseage"  rows="6" placeholder="Any suggestion?" required></textarea>
+                            <button type="submit" class="glow-on-hover">Submit</button>
+                        </form>
+                        <!-- <span id="msg"></span> -->
+                    </div>
                     
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" >
-                        <input type="text" name="Name" placeholder="your name" required>
-                        <input type="email" name="Email" placeholder="example00@gmail.com" required>
-                        <textarea name="Masseage"  rows="6" placeholder="Any suggestion?" required></textarea>
-                        <button type="submit" class="glow-on-hover">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-                <!-- ---------------------------------------------------------------------------------------- -->
                 
-                <!-- ------------------------------------------------------------------ -->
             </div>
             <!-- HOBBIES PANEL -->
             <div class="panel" data-x-pos="-1" data-y-pos="-1" id="hobbies_panel">
                 <span class="panel__nav panel__nav--up js-up">About Me</span>
                 <span class="panel__nav panel__nav--right-top js-up js-right">Home</span>
-
+                <!-- <span class="panel__nav panel__nav--right js-right">Testimonials</span> -->
                 <div class="paraHolder">
                     <h2>Hobbies</h2>
                     <ul>
@@ -250,7 +251,7 @@
                     </ul>
                 </div>
             </div>
-          
+           
             <!-- SKILLS PANEL -->
             <div class="panel" data-x-pos="-1" data-y-pos="1" id="skills_panel">
                 <span class="panel__nav panel__nav--down js-down">About me</span>
@@ -352,7 +353,7 @@
             </div>
             <!-- Projects PANEL -->
             <div class="panel" data-x-pos="1" data-y-pos="1" id="projects_panel">
-               
+                <!-- <span class="panel__nav panel__nav--left js-left">Work</span> -->
                 <span class="panel__nav panel__nav--left-down js-down js-left">Home</span>
                 <span class="panel__nav panel__nav--down js-down">Education</span>
                 <div class="paraHolder">
@@ -476,7 +477,6 @@
         </div>
     </div>
     <script src="script.js"></script>
-
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzUxEEu5Oj8MQdSUw-v_FqQfbjH-wRcLxpByuNzcaH4YSai4aRTP3ACOnxvFgLbOy8/exec'
         const form = document.forms['submit-to-google-sheet']
