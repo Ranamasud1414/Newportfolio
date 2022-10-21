@@ -36,27 +36,6 @@ body {
     animation-fill-mode: backwards;
     animation-delay: 2000ms;
 }
-/* .background-image1{
-    background-image: url(assets/css.gif);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -500px;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    transition: opacity 1s ease-in-out;
-    -webkit-animation: background-image 1s cubic-bezier(.4, .8, .8, 1);
-    -moz-animation: background-image 1s cubic-bezier(.4, .8, .8, 1);
-    animation: background-image 1s cubic-bezier(.4, .8, .8, 1);
-    -webkit-animation-fill-mode: backwards;
-    -moz-animation-fill-mode: backwards;
-    animation-fill-mode: backwards;
-    animation-delay: 2500ms;
-} */
 
 #mapIcon {
     top: 5%;
@@ -216,7 +195,7 @@ h6 {
 }
 
 .span-hello:hover:after {
-    content: "skills";
+    content: "Skills";
 }
 
 .span-iam:after {
@@ -801,7 +780,6 @@ blockquote:nth-of-type(even) footer:before {
     height: 24px;
     padding: 0;
 }
-
 .contact-right form{
     width: 100%;
     position:absolute;
@@ -829,7 +807,7 @@ form input,form textarea{
 
 } */
 .glow-on-hover {
-    width: 220px;
+    width: 200px;
     height: 50px;
     border: none;
     outline: none;
@@ -840,7 +818,7 @@ form input,form textarea{
     z-index: 0;
     border-radius: 10px;
    margin-bottom: 10%;
-   margin-top: 14%;
+   margin-top: 15%;
    margin-left: -52.5%;
    position: absolute;
 }
@@ -885,6 +863,13 @@ form input,form textarea{
     top: 0;
     border-radius: 10px;
 }
+#msg{
+    color: #61b752;
+    margin-top: 0%;
+    display: block;
+    right: 0%;
+}
+
 
 
 /* SKILL ICONS */
@@ -909,7 +894,7 @@ form input,form textarea{
 }
 
 .skill-image-wrapper {
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: block;
     justify-content: center;
@@ -991,21 +976,6 @@ ul.two-column-list {
             transform: scale(1);
         }
     }
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        /* display: flex; */
-        left: 25%;
-        margin-top: 10%;
-       
-        
-    }
-    .glow-on-hover{
-        margin-top: 200px;
-    }
-	.panel__nav{
-        font-size: 50px;
-    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -1054,36 +1024,12 @@ ul.two-column-list {
         width: 100%;
         margin-bottom: 20px;
     }
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        /* display: flex; */
-        left: 25%;
-        margin-top: 10%;
-       
-        
-    }
-    .glow-on-hover{
-        margin-top: 200px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
     .captionImg {
         height: 30%;
         width: 30%;
-    }
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        /* display: flex; */
-        left: 25%;
-        margin-top: 16%;
-       
-        
-    }
-    .glow-on-hover{
-        margin-top: 200px;
     }
 }
 
@@ -1155,6 +1101,34 @@ ul.two-column-list {
             transform: translateY(-10px);
         }
     }
+    .contact-right form{
+        width: 100%;
+        position:absolute;
+        /* display: flex; */
+        left: 0%;
+        margin-top: 70%;
+       
+        
+    }
+    form input,form textarea{
+        width: 100%;
+        padding: 15px;
+        margin: 15px 0;
+        background: #262626;
+        border: 0;
+        font-size: 18px;
+        outline: none;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .glow-on-hover{
+        margin-top: 0px;
+        left: 54%;
+        width: 144px;
+        height: 41px;
+        margin-bottom: 10%;
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -1209,16 +1183,6 @@ ul.two-column-list {
     ul.item-list-with-lines li:after {
         top: 0;
     }
-    .contact-right{
-        flex-basis: 100%;
-    }
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        left: 44%;
-        top: 50%;
-    }
-
 }
 
 @media screen and (max-width: 540px) {
@@ -1240,13 +1204,6 @@ ul.two-column-list {
     }
     .strong-text {
         font-size: 20px;
-    }
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        left: 44%;
-        top: 50%;
-        display: none;
     }
 }
 
@@ -1274,7 +1231,7 @@ ul.two-column-list {
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
     #mapIcon {
         top: 5%;
         right: 5%;
@@ -1292,16 +1249,6 @@ ul.two-column-list {
 @media screen and (max-width: 380px) {
     blockquote p {
         font-size: 14px;
-    }
-   
-}
-@media only screen and (max-width: 360px){
-    .contact-right form{
-        width: 100%;
-        position:absolute;
-        /* display: flex; */
-       
-        
     }
 }
 
