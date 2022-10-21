@@ -1,5 +1,5 @@
 console.log(
-	"Hello there! Thank you for visiting my website. If you are looking for the source code, it can be found at: https://github.com/masudPrakash-26/masudPrakash-26.github.io"
+	"Hello there! Thank you for visiting my website. If you are looking for the source code, it can be found at: https://github.com/AdityaPrakash-26/AdityaPrakash-26.github.io"
 );
 console.log(
 	"Feel free to report bugs and share your feedback. Hope to see you on my repo! :D"
@@ -19,9 +19,9 @@ function checkUrl(url) {
 		} else if (panel == "skills") {
 			pos_x = 1;
 			pos_y = 1;
-		// } else if (panel == "work") {
-		// 	pos_x = 0;
-		// 	pos_y = 1;
+		} else if (panel == "work") {
+			pos_x = 0;
+			pos_y = 1;
 		} else if (panel == "projects") {
 			pos_x = -1;
 			pos_y = 1;
@@ -31,9 +31,9 @@ function checkUrl(url) {
 		} else if (panel == "contact") {
 			pos_x = -1;
 			pos_y = -1;
-		// } else if (panel == "testimonials") {
-		// 	pos_x = 0;
-		// 	pos_y = -1;
+		} else if (panel == "testimonials") {
+			pos_x = 0;
+			pos_y = -1;
 		} else if (panel == "hobbies") {
 			pos_x = 1;
 			pos_y = -1;
